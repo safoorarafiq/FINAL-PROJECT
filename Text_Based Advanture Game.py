@@ -66,7 +66,7 @@ def haunted_room():
     user_input = ""
     
     while user_input not in direction:
-        print("Options: /right/left/backward")
+        print("Options: right/left/backward")
         user_input = input()
         if user_input == "right":
             print("Multiple ghoul-like creatures start emerging as you enter the room. You are killed.")
@@ -88,7 +88,7 @@ def show_skeleton():
     user_input = ""
     
     while user_input not in direction:
-        print("Options: left/backward/forward/")
+        print("Options: left/backward/forward")
         user_input = input()
         if user_input == "left":
             print("\nYou find that this door opens into a wall. You open some of the drywall to discover a knife.")
@@ -122,8 +122,7 @@ def strange_creature():
         else:
             print("Please enter a valid option.")
 
-if __name__ == "__main__":
-    while True:
+while True:
         print("(^_^) Welcome to the Adventure Game! (^_^)")
         print("\nAs an avid traveler, you have decided to visit the Catacombs of Paris.")
         print("However, during your exploration, you find yourself lost.")
